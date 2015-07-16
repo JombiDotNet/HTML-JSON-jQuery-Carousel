@@ -1,0 +1,30 @@
+{
+  "name": "jquery-jsoncarousel",
+  "description": "A jQuery plugin to create a masked carousel from a JSON dataset",
+  "version": "1.0.0",
+  "keywords": [
+              "json",
+              "carousel",
+              "slideshow",
+              "jquery-plugin"
+  ],
+  "author": {
+              "name": "Jim Richards",
+              "email": "jombidesigns@gmail.com"  
+  },
+  "main": "jquery.jsoncarousel.js",
+  "repository": {
+              "type": "git",
+              "url": "https://github.com/JombiDotNet/JSON-Carousel"
+  },
+  "license": "GPL-2.0",
+  "dependencies": {
+              "jquery": ">=1.2.6",
+              "sc_slideshow": "http://jonraasch.com/blog/a-simple-jquery-slideshow"
+  },
+  "style":    "dist/css/jsoncarousel.css"
+  "files": [
+              "dist",
+              "LICENSE"
+  ]
+}

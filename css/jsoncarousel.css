@@ -1,0 +1,7 @@
+#sc_slideshow img.active {
+  border: 3px solid #0d2d6c;
+}
+
+.rounded {
+  border-radius: 5px;
+}
