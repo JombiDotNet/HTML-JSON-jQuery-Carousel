@@ -1,0 +1,27 @@
+﻿/*** set the width and height to match the images **/
+
+#sc_slideshow {
+  position: relative;
+  height: 350px;
+}
+
+  #sc_slideshow IMG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+  }
+
+    #sc_slideshow IMG.active {
+      z-index: 10;
+      opacity: 1.0;
+    }
+
+    #sc_slideshow IMG.last-active {
+      z-index: 9;
+    }
+
+    .rounded {
+      border-radius: 5px;
+    }

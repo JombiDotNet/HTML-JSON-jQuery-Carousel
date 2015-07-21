@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>jQuery - JSON Carousel Test</title>
+  <link href="style/sc_slideshow.css" rel="stylesheet" />
+</head>
+<body style="background-color: #dfe9f8;">
+
+  <div id="sc_slideshow">
+  </div>
+
+  <!-- JavaScript at the bottom for faster page loading-->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+  <!-- If CDN does not load - load jquery from local site -->
+  <script>window.jQuery || document.write('<script src="res/jquery.js"><\/script>')</script>
+
+  <script src="res/jquery.jsoncarousel.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#sc_slideshow').jsonCarousel({
+        root: 'images/carousel',
+        json: 'connector/carousel.js',
+        imgAlt: 'sc_slideshow Image *',
+        imgClass: 'rounded',
+        maskSrc: 'images/carousel-mask.png'
+      });
+    });
+  </script>
+
+  <script src="res/sc_slideshow.js"></script>
+</body>
+</html>

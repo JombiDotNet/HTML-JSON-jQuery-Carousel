@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <style>
+    img {
+      height: 100px;
+      float: left;
+    }
+  </style>
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+
+
+</head>
+<body>
+
+  <div id="images"></div>
+
+  <script>
+    (function () {
+      var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+      $.getJSON(flickerAPI, {
+        tags: "mount rainier",
+        tagmode: "any",
+        format: "json"
+      })
+        .done(function (data) {
+          $.each(data.items, function (i, item) {
+            $("<img>").attr("src", item.media.m).appendTo("#images");
+            if (i === 3) {
+              return false;
+            }
+          });
+        });
+    })();
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $.getJSON("carousel.js", function (data) {
+        $.each(data, function (id, name) {
+          $('<div>').html(name).appendTo("body");
+        });
+      });
+      }); 
+  </script>
+</body>
+</html>

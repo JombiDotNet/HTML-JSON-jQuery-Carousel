@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>File Directory Test</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>File in a Directory Test</h1>
+
+    <div class="example">
+      <h2>Classic ASP.NET</h2>
+      <div id="ClassicAspNet" class="demo">
+        <div id="all-the-files-asp"></div>
+      </div>
+    </div>
+
+    <div class="example">
+      <h2>ASP.NET - Visual Basic</h2>
+      <div id="AspNetVb" class="demo">
+        <div id="all-the-files-asp-vb"></div>
+      </div>
+    </div>
+
+    <div class="example">
+      <h2>ASP.NET - C#</h2>
+      <div id="AspNetCs" class="demo">
+        <div id="all-the-files-asp-cs"></div>
+      </div>
+    </div>
+
+    <div class="example">
+      <h2>Static JSON</h2>
+      <div id="JSON" class="demo">
+        <div id="all-the-files-JSON"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+  <script src="scripts/jquery.filesindirectory.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#ClassicAspNet').filesInDirectory({ root: '/img/carousel', output: '#all-the-files-asp' });
+      $('#AspNetVb').filesInDirectory({ root: '/img/carousel', script: 'FilesInDirectory-vb.aspx', output: '#all-the-files-asp-vb', post: true });
+      $('#AspNetCs').filesInDirectory({ root: '/img/carousel', script: 'FilesInDirectory-cs.aspx', output: '#all-the-files-asp-cs', post: true });
+      $('#JSON').filesInDirectory({ root: '/img/carousel', script: 'carousel.js', output: '#all-the-files-JSON' });
+    });
+  </script>
+</body>
+</html>
