@@ -11,7 +11,7 @@
 // Options:   root                - (string)  root folder to display; 
 //                                            default: /
 //            json                - (string)  location of JSON data source to use; *REQUIRED
-//            post                - (boolean) When true, uses the jQuery.post() method for serverside files
+//            post                - (boolean) When true, uses the jQuery.post() method for server side files
 //                                            When false, uses the jQuery.getJSON() method for Web Services or static files
 //                                            default: false
 //            imgAlt              - (string)  alt to apply to each image. NOTE: adding * to the alt will include the file position.
@@ -21,7 +21,7 @@
 // Special thanks to:
 //    
 //    using JSON data
-//      - Cory S.N. LaViska - http://abeautifulsite.net/notebook.php?article=58
+//      - Cory S.N. LaViska - https://www.abeautifulsite.net/posts/postjson-for-jquery/
 //    image masking
 //      - rj zaworski - http://blog.rjzaworski.com/2011/03/masking-images-with-css-and-jquery/
 //    

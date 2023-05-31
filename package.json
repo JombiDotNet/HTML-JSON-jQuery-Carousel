@@ -22,7 +22,7 @@
               "jquery": ">=1.2.6",
               "sc_slideshow": "http://jonraasch.com/blog/a-simple-jquery-slideshow"
   },
-  "style":    "dist/css/jsoncarousel.css"
+  "style":    "dist/css/jsoncarousel.css",
   "files": [
               "dist",
               "LICENSE"
